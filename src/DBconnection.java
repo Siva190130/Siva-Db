@@ -20,7 +20,7 @@ public class DBconnection {
 		con = DriverManager.getConnection(url, un, psw);
 		System.out.println("Connection established");
 		stms = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,0);
-	    String query = "delete from employees where employee_id=11";
+	    String query = "delete from employees where employee_id=14";
 	    String query1 = "delete from employees where employee_id=12";
 	    
 	    stms.executeUpdate(query);
